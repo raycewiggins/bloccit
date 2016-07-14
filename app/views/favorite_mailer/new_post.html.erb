@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>You are now following your post: "<%= @post.title %>". To unfollow this post go to <%= link_to "Post", topic_post_url(@post.topic, @post) %></h1>
+   </body>
+ </html>

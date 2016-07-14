@@ -1,0 +1,4 @@
+You are now following your post: "<%= @post.title %>"
+ <%= "=" * (@post.title.length + 12) %>
+
+To turn off notifications about this post visit online at: <%= topic_post_url(@post.topic, @post) %> and unfavorite it.
