@@ -1,0 +1,3 @@
+  $('.js-points-count').html("<%= escape_javascript(pluralize(@post.points, 'point')) %>");
+  $('.js-down-vote').html("<%= escape_javascript(pluralize(@post.down_votes, 'down vote')) %>");
+  $('.js-vote-partial').html("<%= escape_javascript(render partial: 'votes/voter', locals: { post: @post }) %>");
